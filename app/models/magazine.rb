@@ -8,6 +8,6 @@ class Magazine < ActiveRecord::Base
     end
 
     def self.most_popular
-        
+        self.all.max{|a, b| a.subscriptions.length <=> b.subscriptions.length}
     end
 end
