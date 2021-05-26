@@ -31,6 +31,7 @@ magazine -- reader is a many to many relationship
 `SUBSCRIPTION`
 
 belongs_to magazine
+
 belongs_to reader
 
 ## Topics

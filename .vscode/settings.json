@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Magazine Domain",
+            "group": "Subs, Readers, Mags Group",
+            "database": "${workspaceFolder:phase-3-object-relations-practice-code-challenge-magazines-many-many}/db/development.sqlite3"
+        }
+    ]
+}
