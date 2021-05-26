@@ -10,4 +10,10 @@ class Subscription < ActiveRecord::Base
     def magazine
         Magazine.find_by(id: self.magazine_id)
     end
+
+    def print_details
+        reader = Reader.find_by(id: self.reader_id).name
+        magazine = Magazine.find_by(id: self.magazine_id).title
+        puts "#{reader} subscribed to #{magazine} for #{self.price}"
+    end
 end
