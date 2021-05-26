@@ -12,6 +12,27 @@ For our purposes, a `Magazine` has many `Subscription`s, a `Reader` has many `Su
 
 **Note**: You should draw your domain on paper or on a whiteboard _before you start coding_. Remember to identify a single source of truth for your data.
 
+## Diagram
+
+`SINGLE SOURCE OF TRUTH`
+
+Magazine domain is single source of truth.
+
+`READER`
+
+has_many subscriptions
+magazine -- reader is a many to many relationship
+
+`MAGAZINE`
+
+has_many subscriptions
+magazine -- reader is a many to many relationship
+
+`SUBSCRIPTION`
+
+belongs_to magazine
+belongs_to reader
+
 ## Topics
 
 - Active Record Migrations
