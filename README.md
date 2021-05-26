@@ -14,21 +14,21 @@ For our purposes, a `Magazine` has many `Subscription`s, a `Reader` has many `Su
 
 ## Diagram
 
-`SINGLE SOURCE OF TRUTH`
+`SINGLE SOURCE OF TRUTH:`
 
 Magazine domain is single source of truth.
 
-`READER`
+`READER:`
 
 has_many subscriptions
 magazine -- reader is a many to many relationship
 
-`MAGAZINE`
+`MAGAZINE:`
 
 has_many subscriptions
 magazine -- reader is a many to many relationship
 
-`SUBSCRIPTION`
+`SUBSCRIPTION:`
 
 belongs_to magazine
 
